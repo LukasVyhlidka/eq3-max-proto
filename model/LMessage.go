@@ -14,7 +14,8 @@ type MaxDevice struct {
 	Flags             int
 	ValvePosition     byte
 	Temperature       int
-	DateUntil         byte
+	DateUntil         int
+	TimeUntil         byte
 	ActualTemparature int
 }
 
@@ -32,6 +33,6 @@ const (
 
 func (t MaxDevice) String() string {
 	return fmt.Sprintf(
-		"MaxDevice{DeviceType: %d, RfAddress: %d, Unknown: %d, Flags: %d, ValvePosition: %d, Temperature: %d, DateUntil: %d, ActualTemperature: %d}",
-		t.DeviceType, t.RfAddress, t.Unknown, t.Flags, t.ValvePosition, t.Temperature, t.DateUntil, t.ActualTemparature)
+		"MaxDevice{DeviceType: %d, RfAddress: %d, Unknown: %d, Flags: %d, ValvePosition: %d, Temperature: %d, DateUntil: %d, TimeUntil: %d ActualTemperature: %d}",
+		t.DeviceType, t.RfAddress, t.Unknown, t.Flags, t.ValvePosition, t.Temperature, t.DateUntil, t.TimeUntil, t.ActualTemparature)
 }
