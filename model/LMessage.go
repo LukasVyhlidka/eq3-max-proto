@@ -36,3 +36,7 @@ func (t MaxDevice) String() string {
 		"MaxDevice{DeviceType: %d, RfAddress: %d, Unknown: %d, Flags: %d, ValvePosition: %d, Temperature: %d, DateUntil: %d, TimeUntil: %d ActualTemperature: %d}",
 		t.DeviceType, t.RfAddress, t.Unknown, t.Flags, t.ValvePosition, t.Temperature, t.DateUntil, t.TimeUntil, t.ActualTemparature)
 }
+
+func (m LMessage) GetMessageType() string {
+	return "L"
+}

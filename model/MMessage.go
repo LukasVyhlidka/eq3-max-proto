@@ -32,3 +32,7 @@ const (
 	ShutterContact        DeviceTypeMeta = 4
 	PushButton            DeviceTypeMeta = 5
 )
+
+func (m MMessage) GetMessageType() string {
+	return "M"
+}
